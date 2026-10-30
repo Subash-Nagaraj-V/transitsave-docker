@@ -51,7 +51,7 @@ A React 18 + TypeScript + Vite PWA, containerized with Docker as a DevOps learni
 | Image | Disk size | Compressed (Docker Hub push) |
 |---|---|---|
 | Single-stage (Node + vite preview), `Dockerfile.single` | 993 MB | 233 MB |
-| Multi-stage (nginx:alpine), `Dockerfile` | 99.2 MB | 28.8 MB |
+| Multi-stage (nginx:alpine), `Dockerfile` | 99.2 MB | 27.4 MB |
 
 The multi-stage image is about **10x smaller**. The single-stage image carries 416 MB of `node_modules`, plus Node and npm, none of which are needed to serve static files.
 
@@ -69,7 +69,7 @@ The multi-stage image is about **10x smaller**. The single-stage image carries 4
 | Config edit not visible | nginx only reads config on reload | `docker exec transitsave nginx -s reload` |
 | `ping web-default` failed | Default bridge has no DNS | Use a custom bridge network (or ping by IP) |
 | `.NetworkSettings.IPAddress` error | Field removed in newer Docker | Use `.NetworkSettings.Networks.bridge.IPAddress` |
-| Image above the 50 MB target | `nginx:alpine` alone is about 50 MB | Compressed push size is 28.8 MB, so the target is met where it matters |
+| Image above the 50 MB target | `nginx:alpine` alone is about 50 MB | Compressed push size is 27.4 MB, so the target is met where it matters |
 
 ## Native Ubuntu vs WSL2
 

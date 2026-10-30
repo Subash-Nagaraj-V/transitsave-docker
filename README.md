@@ -1,3 +1,5 @@
+> Docker setup and full write-up: see [DOCKER.md](DOCKER.md)
+
 # Transit Save - Compare Transit Fares in Tamil Nadu
 
 ## Project info
