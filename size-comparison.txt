@@ -1,0 +1,6 @@
+TAG       SIZE
+single    993MB
+v1.0.0    99.2MB
+multi     99.2MB
+v3        99.2MB
+v2        99.2MB

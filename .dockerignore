@@ -1,0 +1,29 @@
+# Dependencies (installed fresh inside the container)
+node_modules
+
+# Build output (produced inside the container)
+dist
+
+# Git and CI files
+.git
+.gitignore
+.github
+
+# Docker files themselves
+Dockerfile
+docker-compose.yml
+.dockerignore
+docker-deploy.sh
+Makefile
+DOCKER.md
+
+# Junk and helper files from your project that the build does not need
+tmp_*
+build_output.txt
+bun.lockb
+convert-svg-to-png.js
+
+# Secrets and logs
+.env
+.env.*
+*.log

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#14b8a6" />
+      <stop offset="100%" stopColor="#0f766e" />
+    </linearGradient>
+  </defs>
+  
+  {/* Circular Swoosh - Simplied for Favicon */}
+  <path
+    d="M160 60 C 180 85, 180 120, 150 150 C 110 190, 40 190, 20 140 C 0 90, 10 30, 80 15 C 110 10, 145 25, 160 60 Z"
+    stroke="url(#faviconGradient)"
+    strokeWidth="15"
+    fill="none"
+    strokeLinecap="round"
+  />
+  
+  {/* Inner stylized T */}
+  <path
+    d="M70 70 H 130 M 100 70 V 135"
+    stroke="#14b8a6"
+    strokeWidth="15"
+    strokeLinecap="round"
+  />
+</svg>
